@@ -6,8 +6,8 @@ install:
   "pip install -r requirements.txt"
 
 before_script: 
-  - autopep8 -ir *
-  - flake8 --max-complexity=15 --exclude=*.txt,*.md *
+  - "autopep8 -ir *"
+  - "flake8 --max-complexity=15 --exclude=*.txt,*.md *"
 
 script: 
-   - python TestFiguras.py
+   - "python TestFiguras.py"
