@@ -1,10 +1,10 @@
---- 
-before_script: 
+---
+before_script:
   - "autopep8 -ir *"
   - "flake8 --max-complexity=15 --exclude=*.txt,*.md *"
-install: "pip install -r requirements.txt"
+install: "pip install -r requerimientos.txt"
 language: python
-python: 
+python:
   - "2.7"
-script: 
+script:
   - "python TestFiguras.py"
